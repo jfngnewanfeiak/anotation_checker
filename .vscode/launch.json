@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": "/home/user/Isaac_Sim_Generated_Images/Omni202508051457"
+            "args": "/home/user/Isaac_Sim_Generated_Images/Omni202508051825"
         }
     ]
 }
