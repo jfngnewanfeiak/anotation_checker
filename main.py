@@ -45,7 +45,8 @@ def annotation_checker(text_path,img_path,omni_dir):
     
     if not os.path.exists(f"{omni_dir}/checker"):
         os.mkdir(f"{omni_dir}/checker")
-    cv2.imwrite(f'{omni_dir}/checker/result_{num}.png',img)
+    
+    cv2.imwrite(f'{omni_dir}/checker/result_{img_path.stem}.png',img)
 
 if __name__ == "__main__":
     main()
