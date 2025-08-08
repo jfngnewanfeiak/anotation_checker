@@ -29,10 +29,13 @@ def annotation_checker(text_path,img_path,omni_dir):
                            ) for element in txt_split_data]
     
     rect_points = [np.clip(element,0,1) for element in rect_points]
-
+    width = 640
+    # width = 1280
+    height= 480
+    # height = 720
     for element in rect_points:
-        element[:,::2]  = element[:,::2] * 640
-        element[:,1::2] = element[:,1::2] * 480
+        element[:,::2]  = element[:,::2] * width
+        element[:,1::2] = element[:,1::2] * height
 
     rect_points = [element.astype(np.int32).reshape((-1,1,2)) for element in rect_points]
 
